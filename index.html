@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HashGen</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/crypto-js.min.js"></script>
+</head>
+<body>
+<div class="main-frame">
+   <h2 class="text-center mb-3 main-heading">Hash Generator</h2>
+   <select id="select" class="form-select form-select-sm mb-2">
+     <option value="SHA1">SHA-1</option>
+     <option value="SHA256">SHA-256</option>
+      <option value="SHA512">SHA-512</option>
+      <option value="MD5">MD5</option>
+   </select>
+   <input id="hash-input" class="form-control form-control-sm" type="text" placeholder="Enter your string">
+   <div id="output"> 
+      <h2 class="text-center mt-2 mb-3 output-heading">Output</h2>
+      <div class="input-group">
+         <input id="output-hash" class="form-control" type="text">
+         <button id="copy" class="btn btn-outline-success">Copy</button>
+      </div>
+   </div>
+   <script src="js/main.js"></script>
+</body>
+</html>

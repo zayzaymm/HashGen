@@ -1,0 +1,32 @@
+{   
+    "manifest_version": 3,
+    "name": "HashGen",
+    "version": "1.0.0",
+    "description": "A simple extension to generate sha-1,sha-256,sha-512 and md5",
+    "permissions": ["contextMenus","storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+           "run_at": "document_start",
+           "matches": ["<all_urls>"],
+           "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "img/icon.png",
+            "32": "img/icon.png",
+            "128": "img/icon.png"
+        },
+        "default_tilte": "HashGen",
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "img/icon.png",
+        "32": "img/icon.png",
+        "128": "img/icon.png"
+    }
+}

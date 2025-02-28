@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 300px;
+    height: auto;
+}
+.main-frame {
+    padding: 10px;
+}
+.main-heading {
+    font-size: 16px;
+}
+.output-heading {
+    font-size: 16px;
+}
+#output {
+    display: none;
+}
